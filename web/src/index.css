@@ -1,0 +1,40 @@
+@import '@fontsource/montserrat/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/poppins/600.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-blue: #1E3A8A;
+    --electric-blue: #2563EB;
+    --neon-green: #22C55E;
+    --bright-orange: #F97316;
+    --vibrant-red: #DC2626;
+    --cyber-purple: #9333EA;
+    --teal-cyan: #06B6D4;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  button {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--cyber-purple) 100%
+  );
+}
